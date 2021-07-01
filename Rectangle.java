@@ -15,6 +15,7 @@ public class Rectangle extends Shape
 
     public Rectangle(double x, double y, int width, int height, boolean selection)
     {
+        super(x,y);
         this.width = width;
         this.height = height;
         setLocation(x,y);
@@ -54,23 +55,6 @@ public class Rectangle extends Shape
         return super.toString() + " width: " + width + ", height: " + height;
     }
 
-    @Override
-    public double getY() {
-        return y;
-    }
-
-    @Override
-    public double getX() {
-        return x;
-    }
-
-    @Override
-    public void setLocation(double x, double y)
-    {
-        this.x = x;
-        this.y = y;
-
-    }
 
     @Override
     public boolean getSelected()
