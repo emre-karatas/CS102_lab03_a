@@ -17,6 +17,7 @@ public class Triangle extends Shape
 
     public Triangle(double x, double y, int a, int b, int c, boolean selection)
     {
+        super(x,y);
         this.a = a;
         this.b = b;
         this.c = c;
@@ -55,24 +56,7 @@ public class Triangle extends Shape
         return super.toString() + " Side A: " + a + ", Side B: " + b + ", Side C: " + c;
      }
 
-    @Override
-    public double getX()
-    {
-        return x;
-    }
 
-    @Override
-    public double getY()
-    {
-        return y;
-    }
-
-    @Override
-    public void setLocation(double x, double y)
-    {
-        this.x = x;
-        this.y = y;
-    }
 
     @Override
     public boolean getSelected() {
