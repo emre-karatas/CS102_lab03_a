@@ -13,6 +13,7 @@ public  class Circle extends Shape
 
     public Circle( double x, double y, int radius, boolean selection)
     {
+        super(x,y);
         this.radius = radius;
         setLocation(x,y);
         setSelected(selection);
@@ -49,36 +50,6 @@ public  class Circle extends Shape
     }
 
 
-    /**
-     * get x coordinate
-     * @return x
-     */
-    @Override
-    public double getX() {
-        return x;
-    }
-
-    /**
-     * Get y coordinate
-     * @return y
-     */
-    @Override
-    public double getY() {
-        return y;
-    }
-
-    /**
-     * Set location
-     * @param x location
-     * @param y location
-     */
-    @Override
-    public void setLocation(double x, double y)
-    {
-        this.x = x;
-        this.y = y;
-
-    }
 
     /**
      * getSelection
